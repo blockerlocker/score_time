@@ -2,7 +2,7 @@ score_time is a small data pack library for formatting scoreboard objectives int
 
 This does NOT output a string to storage; it DIRECTLY updates the scoreboard using `scoreboard players display numberformat`, so anywhere the scoreboard appears (sidebar, below nameplate) it will automatically change.
 
-The only function you need to call is `score_time:update`, with arguments `display_format`, `player`, and `objective`. To use, run this function every time you wish for the specific objective to have its number format updated (which is typically every tick for a timer that's ticking down.) For example, putting the following commmand into a Repeating Command Block will make every player's `generic_timer` score display as a timecode, since the function is run as every player on every tick.
+The only function you need to call is `score_time:update`, with arguments `display_format`, `player`, and `objective`. To use, run this function every time you wish for the specific objective to have its number format updated (which is typically every tick for a timer that's ticking down.) For example, putting the following commmand into a Repeating Command Block will make every player's `timer` score display as a timecode, since the function is run as every player on every tick.
 
 ```
 execute as @a run function score_time:update {display_format:[hours,minutes,seconds]},player:"@s",objective:"timer"}
