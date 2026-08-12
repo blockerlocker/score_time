@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": "Format scores into a readable timecode.",
-    "min_format": 115,
+    "min_format": 107,
     "max_format": 115
   }
 }
